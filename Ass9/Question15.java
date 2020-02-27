@@ -10,17 +10,17 @@ public class Question15 {
 		String wordCat = sc.next();
 		String wordDog = wordCat;
 		boolean flag = true;
-		int catFlag =1, dogFlag=1;
+		int catCount =0, dogCount=0;
 		while((wordCat.toLowerCase().contains("cat") || (wordDog.toLowerCase().contains("dog")))) {
 			if(wordCat.contains("cat")) {
 				wordCat = wordCat.substring(wordCat.indexOf("cat")+3);
-				catFlag *=-1;
+				catCount++;
 			}
 			if(wordDog.contains("dog")) {
 				wordDog = wordDog.substring(wordDog.indexOf("dog")+3);
-				dogFlag *=-1;
+				dogCount++;
 			}
-			if(catFlag != dogFlag) {
+			if(catCount != dogCount) {
 				flag = false;
 				break;
 			}
