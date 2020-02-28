@@ -21,9 +21,7 @@ public class Question77 {
 		for(int each:products) {
 			sum += each;
 		}
-		if(products.length - sum >= limit) {
-			return false;
-		}else return true;
+		return (products.length - sum < limit);
 	}
 
 }
