@@ -15,16 +15,17 @@ public class Question65 {
 		
 		System.out.println("word list ==> " + wordList);
 		System.out.println("target word ==> " + targetWord);
-		System.out.println("Final ==> " + removeAll(wordList,targetWord));
+		System.out.print("Final ==> ");
+		removeAll(wordList,targetWord));
 
 	}
-	public static ArrayList<String> removeAll(ArrayList<String> wordList,String targetWord){
+	public static void removeAll(ArrayList<String> wordList,String targetWord){
 		for(int i=0;i<wordList.size();i++) {
 			if(wordList.get(i).equals(targetWord)) {
 				wordList.remove(i);
 			}
 		}
-		return wordList;
+		System.out.println(wordList);
 	}
 
 }
