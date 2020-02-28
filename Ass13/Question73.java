@@ -8,7 +8,7 @@ public class Question73 {
 		String[][] conversionRate1 = {{"drachma","0.6"},{"sek","100"}};
 		
 		String[][] money2 = {{"yen","5.0"},{"frank","5.0"}};
-		String[][] conversionRate2 = {{"yen","1"},{"frank","1"}};
+		String[][] conversionRate2 = {{"yen","1"},{"frank","1"}}; 
 		
 		System.out.println(convertC(money1, conversionRate1));
 		System.out.println(convertC(money2, conversionRate2));
