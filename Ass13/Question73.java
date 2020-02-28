@@ -21,6 +21,7 @@ public class Question73 {
 			for(int j=0;j<conversionRate.length;j++) {
 				if(money[i][0] == conversionRate[j][0]) {  //checking the name of the currency ( assuming they may not be in the same order)
 					sum += Double.parseDouble(money[i][1]) * Double.parseDouble(conversionRate[i][1]);
+					break;
 				}
 			}
 		}
